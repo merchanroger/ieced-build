@@ -147,6 +147,23 @@
       <section class="cta-band"><div class="wrap cta-inner"><div><h2>${isEn?'Need information or want to book an appointment?':'¿Necesitas información o deseas agendar una cita?'}</h2><p>${isEn?'Contact the IECED team.':'Comunícate con nuestro equipo de atención.'}</p></div><a class="btn btn-white" href="${href('contacto')}">${isEn?'Contact us':'Contáctanos'} ↗</a></div></section>`;
     reveal();
   }
+  function renderAppPage() {
+    const isEn = lang === 'en';
+    document.title = `${isEn ? 'IECED App' : 'APP IECED'} | IECED`;
+    const benefits = isEn
+      ? [['30%','Ultrasounds'],['25%','Medical consultations'],['20%','Procedures'],['15%','Laboratory tests'],['10%','Discount for dependents']]
+      : [['30%','En ecografías'],['25%','En consultas médicas'],['20%','En procedimientos'],['15%','En exámenes de laboratorio'],['10%','De descuento para dependientes']];
+    const features = isEn
+      ? [['01','Book with your preferred physician','Schedule medical appointments through the app.'],['02','Appointments in less than five minutes','Manage your appointment quickly.'],['03','View and download your results','Access your medical results from your device.'],['04','Pay for appointments','In-person and online appointment payments.']]
+      : [['01','Agenda con tu médico favorito','Gestiona tus citas médicas desde la aplicación.'],['02','Agendamiento en menos de 5 minutos','Organiza tu atención de forma sencilla.'],['03','Visualiza y descarga tus resultados','Consulta tus resultados desde tu dispositivo.'],['04','Pago de citas médicas','Realiza pagos de citas presenciales y online.']];
+    app.innerHTML = `
+      <section class="app-page-hero"><div class="wrap app-hero-grid"><div class="app-hero-copy"><div class="eyebrow">${isEn?'IECED MOBILE APPLICATION':'APP IECED · ¡SIEMPRE SEGURO!'}</div><h1>${isEn?'Enjoy your time with peace of mind!':'¡Disfruta de tu tiempo con tranquilidad!'}</h1><p>${isEn?'Secure your medical care online or in person through the IECED app on your mobile device.':'Asegura tu atención médica online o presencial a través de la APP IECED en cualquier dispositivo móvil.'}</p><div class="app-store-actions"><a class="store-button" href="https://play.google.com/store/apps/details?id=com.mdconsgroup.iecedapp" target="_blank" rel="noopener noreferrer"><span class="store-mark">▶</span><span><small>${isEn?'GET IT ON':'DISPONIBLE EN'}</small><strong>Google Play</strong></span></a><a class="store-button" href="https://apps.apple.com/ec/app/ieced/id1623242587" target="_blank" rel="noopener noreferrer"><span class="store-mark">●</span><span><small>${isEn?'DOWNLOAD ON':'DESCÁRGALA EN'}</small><strong>App Store</strong></span></a></div><a class="app-other-link" href="#otras-versiones">${isEn?'Other versions and compatibility':'Otras versiones'} ↓</a></div><div class="app-visual" aria-label="${isEn?'Illustration of the IECED mobile app':'Ilustración de la aplicación móvil IECED'}"><div class="app-orbit app-orbit-one"></div><div class="app-orbit app-orbit-two"></div><div class="app-phone"><div class="app-phone-notch"></div><div class="app-phone-head"><img src="assets/logo-ieced.svg" alt="IECED"><span>Hola, paciente</span></div><div class="app-phone-card"><small>IECED · APP</small><strong>${isEn?'Your health, closer':'Tu salud, más cerca'}</strong><span class="app-phone-pill">${isEn?'Book appointment':'Agendar cita'} ↗</span></div><div class="app-phone-lines"><i></i><i></i><i></i></div><div class="app-phone-bottom"><b>⌂</b><b>▦</b><b>♡</b><b>◉</b></div></div><span class="app-visual-caption">${isEn?'Care made simple':'Atención fácil y directa'}</span></div></div></section>
+      <section class="app-benefits-section"><div class="wrap"><div class="section-heading"><div class="eyebrow">${isEn?'EXCLUSIVE BENEFITS':'BENEFICIOS EXCLUSIVOS'}</div><h2>${isEn?'Benefits available through the IECED app':'Beneficios exclusivos desde la APP IECED'}</h2><p>${isEn?'Enjoy the benefits offered to app users.':'Disfruta de los beneficios exclusivos disponibles desde la aplicación.'}</p></div><div class="app-benefit-grid">${benefits.map((b,i)=>`<article class="app-benefit-card"><span class="app-benefit-number">${String(i+1).padStart(2,'0')}</span><strong>${b[0]}</strong><p>${b[1]}</p></article>`).join('')}</div></div></section>
+      <section class="app-features-section"><div class="wrap"><div class="section-heading"><div class="eyebrow">${isEn?'EASY AND DIRECT':'FÁCIL Y DIRECTO'}</div><h2>${isEn?'For us, your time and wellbeing matter':'Para nosotros tu tiempo y bienestar es importante.'}</h2><p>${isEn?'Manage key parts of your care through the IECED app.':'Asegura tu atención médica online o presencial a través de la APP IECED en cualquier dispositivo móvil.'}</p></div><div class="app-feature-grid">${features.map(f=>`<article class="app-feature-card"><span>${f[0]}</span><div><h3>${f[1]}</h3><p>${f[2]}</p></div></article>`).join('')}</div></div></section>
+      <section class="app-versions-section" id="otras-versiones"><div class="wrap app-versions-inner"><div><div class="eyebrow">${isEn?'OTHER VERSIONS':'OTRAS VERSIONES'}</div><h2>${isEn?'Android compatibility':'Compatibilidad con Android'}</h2><p>${isEn?'IECED provides an Android legacy version for devices that are not compatible with the current Google Play version. Contact IECED to confirm the appropriate installation option for your device.':'IECED informa que dispone de una versión Android compatible con dispositivos anteriores a Android 13. Para confirmar la opción de instalación adecuada para tu dispositivo, comunícate con el equipo de IECED.'}</p><a class="btn" href="https://wa.me/593986637750" target="_blank" rel="noopener noreferrer">${isEn?'Ask IECED on WhatsApp':'Consultar por WhatsApp'} ↗</a></div><div class="app-version-note"><strong>${isEn?'Before installing':'Antes de instalar'}</strong><p>${isEn?'Use the official store whenever your device is compatible. For older Android versions, request the current official instructions from IECED.':'Utiliza la tienda oficial siempre que tu dispositivo sea compatible. Para versiones anteriores de Android, solicita a IECED las instrucciones oficiales vigentes.'}</p></div></div></section>`;
+    reveal();
+  }
+
   function renderPage(key) {
     const data = DATA[key];
     if (!data) {
@@ -163,8 +180,8 @@
     document.title = `${title || label(key)} | IECED`;
     const bodyHtml = (body || []).map((p,i)=>`<div class="content-paragraph"><span class="paragraph-marker">${String(i+1).padStart(2,'0')}</span><p>${esc(p)}</p></div>`).join('');
     const notice = missing ? `<div class="notice"><strong>${esc(t('missingTitle'))}</strong><p>${esc(t('missing'))}</p></div>` : '';
-    const contact = key==='contacto' ? `<div class="contact-grid"><a class="contact-item" href="tel:+59342109180"><span>☎</span><div><b>${lang==='en'?'Phone':'Teléfono'}</b>04 2 109180</div></a><a class="contact-item" href="https://wa.me/593986637750" target="_blank" rel="noopener"><span>◉</span><div><b>WhatsApp</b>098 663 7750</div></a><a class="contact-item" href="mailto:callcenter1@ieced.ec"><span>✉</span><div><b>Email</b>callcenter1@ieced.ec</div></a><a class="contact-item" href="mailto:comercial@ieced.ec"><span>✉</span><div><b>Comercial</b>comercial@ieced.ec</div></a><div class="contact-item"><span>⌖</span><div><b>${lang==='en'?'Address':'Dirección'}</b>${lang==='en'?'Next to Omni Hospital, Av. Abel R. Castillo S/N and Av. Juan Tanca Marengo. Torre Médica I, mezzanine 3; Torre Médica II, 4th floor, offices 405–406, Guayaquil.':'Junto al Omni Hospital, Av. Abel R. Castillo S/N y Av. Juan Tanca Marengo. Torre Médica I, mezzanine 3; Torre Médica II, 4.º piso, consultorios 405–406, Guayaquil.'}</div></div></div>${renderContactForm()}` : '';
-    app.innerHTML = `<section class="page-hero"><div class="wrap"><div class="breadcrumb"><a href="${href('home')}">${esc(t('crumbHome'))}</a><span>›</span>${esc(label(key))}</div><div class="eyebrow">${esc(data.eyebrow || 'IECED')}</div><h1>${esc(title || label(key))}</h1>${intro ? `<p>${esc(intro)}</p>` : ''}</div></section><section class="page-content"><div class="wrap page-layout"><article class="page-copy">${bodyHtml}${notice}${contact}<a class="btn" href="${href('contacto')}">${esc(t('contactCta'))}<span>↗</span></a></article>${brandPanel(data.eyebrow || 'IECED')}</div></section>`;
+    const contact = key==='contacto' ? `<div class="contact-grid"><a class="contact-item" href="tel:+59342109180"><span>☎</span><div><b>${lang==='en'?'Phone':'Teléfono'}</b>04 2 109180</div></a><a class="contact-item" href="https://wa.me/593986637750" target="_blank" rel="noopener"><span>◉</span><div><b>WhatsApp</b>098 663 7750</div></a><a class="contact-item" href="mailto:callcenter1@ieced.ec"><span>✉</span><div><b>Email</b>callcenter1@ieced.ec</div></a><a class="contact-item" href="mailto:comercial@ieced.ec"><span>✉</span><div><b>Comercial</b>comercial@ieced.ec</div></a><div class="contact-item"><span>⌖</span><div><b>${lang==='en'?'Address':'Dirección'}</b>${lang==='en'?'Next to Omni Hospital, Av. Abel R. Castillo S/N and Av. Juan Tanca Marengo. Torre Médica I, mezzanine 3; Torre Médica II, 4th floor, offices 405–406, Guayaquil.':'Junto al Omni Hospital, Av. Abel R. Castillo S/N y Av. Juan Tanca Marengo. Torre Médica I, mezzanine 3; Torre Médica II, 4.º piso, consultorios 405–406, Guayaquil.'}</div></div></div><section class="contact-map-section"><div class="contact-map-heading"><h2>${lang==='en'?'Find IECED':'Encuéntranos en Google Maps'}</h2><a href="https://www.google.com/maps/search/?api=1&query=IECED%2C%20Av.%20Abel%20R.%20Castillo%20S%2FN%20y%20Av.%20Juan%20Tanca%20Marengo%2C%20Guayaquil%2C%20Ecuador" target="_blank" rel="noopener noreferrer">${lang==='en'?'Open in Google Maps':'Abrir en Google Maps'} ↗</a></div><iframe class="contact-map" title="${lang==='en'?'IECED location map':'Mapa de ubicación de IECED'}" src="https://www.google.com/maps?q=IECED%2C%20Av.%20Abel%20R.%20Castillo%20S%2FN%20y%20Av.%20Juan%20Tanca%20Marengo%2C%20Guayaquil%2C%20Ecuador&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></section>${renderContactForm()}` : '';
+    app.innerHTML = `<section class="page-hero"><div class="wrap"><div class="breadcrumb"><a href="${href('home')}">${esc(t('crumbHome'))}</a><span>›</span>${esc(label(key))}</div><div class="eyebrow">${esc(data.eyebrow || 'IECED')}</div><h1>${esc(title || label(key))}</h1>${intro ? `<p>${esc(intro)}</p>` : ''}</div></section><section class="page-content"><div class="wrap page-layout ${key==='contacto'?'contact-page-layout':''}"><article class="page-copy">${bodyHtml}${notice}${contact}<a class="btn" href="${href('contacto')}">${esc(t('contactCta'))}<span>↗</span></a></article>${key==='contacto'?'':brandPanel(data.eyebrow || 'IECED')}</div></section>`;
     reveal();
   }
   function reveal(){
@@ -173,13 +190,38 @@
     const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');observer.unobserve(e.target);}}),{threshold:.08});
     nodes.forEach(n=>observer.observe(n));
   }
+  function navigate(url, push) {
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (push) history.pushState({}, '', url);
+    if (reduced) {
+      render();
+      window.scrollTo({top:0,behavior:'auto'});
+      return;
+    }
+    app.classList.remove('is-entering');
+    app.classList.add('is-leaving');
+    const loader = document.createElement('div');
+    loader.className = 'route-loader';
+    loader.setAttribute('role','status');
+    loader.setAttribute('aria-label',lang==='en'?'Loading section':'Cargando apartado');
+    loader.innerHTML = '<span class="route-spinner"></span><span>IECED</span>';
+    app.appendChild(loader);
+    window.setTimeout(() => {
+      render();
+      app.classList.remove('is-leaving');
+      app.classList.add('is-entering');
+      window.scrollTo({top:0,behavior:'smooth'});
+      requestAnimationFrame(() => requestAnimationFrame(() => app.classList.remove('is-entering')));
+    }, 125);
+  }
+
   function render(){
     const requested=new URLSearchParams(location.search).get('page')||'home';
     const key=requested==='inicio'?'home':requested;
     renderNav(key);
     nav.classList.remove('open');
     document.querySelector('.menu-toggle').setAttribute('aria-expanded','false');
-    if(key==='home') renderHome(); else if(key==='blog') renderBlog(); else if(key==='blog-articulo') renderBlogArticle(new URLSearchParams(location.search).get('post')||''); else renderPage(key);
+    if(key==='home') renderHome(); else if(key==='app-ieced') renderAppPage(); else if(key==='blog') renderBlog(); else if(key==='blog-articulo') renderBlogArticle(new URLSearchParams(location.search).get('post')||''); else renderPage(key);
     document.documentElement.lang=lang;
     document.querySelectorAll('[data-lang]').forEach(b=>{const active=b.dataset.lang===lang;b.classList.toggle('selected',active);b.setAttribute('aria-pressed',String(active));});
     document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=t(el.dataset.i18n);});
@@ -190,11 +232,12 @@
     const langButton=event.target.closest('[data-lang]');
     if(langButton){lang=langButton.dataset.lang;try{localStorage.setItem('ieced-lang',lang);}catch(e){}render();return;}
     const anchor=event.target.closest('a[href^="?page="]');
-    if(anchor){event.preventDefault();history.pushState({},'',anchor.getAttribute('href'));app.classList.add('is-transitioning');window.setTimeout(()=>{render();app.classList.remove('is-transitioning');},matchMedia('(prefers-reduced-motion: reduce)').matches?0:90);window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});return;}
+    if(anchor){event.preventDefault();navigate(anchor.getAttribute('href'),true);return;}
   });
   document.querySelector('.menu-toggle').addEventListener('click',()=>{const open=nav.classList.toggle('open');document.querySelector('.menu-toggle').setAttribute('aria-expanded',String(open));});
   document.addEventListener('click',event=>{if(!event.target.closest('.nav-group')){document.querySelectorAll('.nav-group.expanded').forEach(g=>{g.classList.remove('expanded');g.querySelector('.nav-trigger')?.setAttribute('aria-expanded','false');});}});
   document.addEventListener('keydown',event=>{if(event.key==='Escape'){document.querySelectorAll('.nav-group.expanded').forEach(g=>{g.classList.remove('expanded');g.querySelector('.nav-trigger')?.setAttribute('aria-expanded','false');});nav.classList.remove('open');document.querySelector('.menu-toggle').setAttribute('aria-expanded','false');}});
-  window.addEventListener('popstate',render);
+  window.addEventListener('popstate',()=>navigate(location.href,false));
   render();
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) { app.classList.add('is-entering'); requestAnimationFrame(()=>requestAnimationFrame(()=>app.classList.remove('is-entering'))); }
 })();
