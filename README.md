@@ -14,7 +14,7 @@ Se continuó sobre el proyecto existente `IECED-segunda-fase-actualizado.zip`. N
 - Se amplió el contenido disponible de Nosotros, ¿Por qué IECED?, Centros avalados, Procesos de Calidad, APP IECED, Consultas médicas, No más obesidad, Preparaciones y Premios IECED.
 - Las rutas sin contenido recuperado ya no devuelven silenciosamente a Inicio: muestran el nombre de la sección y una advertencia de contenido fuente pendiente.
 - Se amplió ligeramente el tamaño del menú y de la franja superior, sin cambiar su estructura; se ajustó el hover y el estado activo para mejorar el contraste usando fondos claros y texto oscuro dentro de la identidad naranja IECED.
-- Se incorporó una transición de salida/entrada común a las rutas, con indicador breve de carga y respeto a `prefers-reduced-motion`. No se añade una espera artificial prolongada.
+- La navegación entre rutas conserva el cambio de contenido sin desvanecer ni ocultar el contenedor completo de la página; las animaciones de aparición se reservan a elementos individuales al desplazarse.
 - Se reconstruyó la página APP IECED con sus beneficios oficiales, funciones descritas por IECED, ilustración CSS propia sin fotografías de personas y botones hacia las fichas oficiales de Google Play y App Store. La sección “Otras versiones” explica la compatibilidad Android legacy y ofrece contacto; no se enlaza un APK cuya descarga no pudo verificarse.
 - Se añadió un mapa incrustado en Contacto y un enlace para abrir Google Maps, utilizando la dirección oficial publicada por IECED. La búsqueda del mapa utiliza la dirección textual; no se inventaron coordenadas.
 - Se conservan el selector ES/EN, favicon, logotipo, formulario, navegación interna y adaptación responsive.
@@ -47,5 +47,17 @@ Se continuó sobre el proyecto existente `IECED-segunda-fase-actualizado.zip`. N
 - `data.js`: navegación y contenido institucional recuperado.
 - `assets/logo-ieced.svg`, `assets/favicon.svg`: marca y favicon.
 - `assets/facebook.svg`, `instagram.svg`, `x.svg`, `youtube.svg`, `linkedin.svg`: iconos sociales locales.
+- `assets/whatsapp.svg`: logotipo vectorial utilizado por el botón flotante de WhatsApp.
 - `.nojekyll`: evita el procesamiento de Jekyll.
 - `QA-ANTES-DE-PUBLICAR.md`: comprobaciones pendientes antes de publicar.
+
+
+## Ajuste puntual — Scroll reveal e iconografía (17 de noviembre de 2026)
+- Se incorporó `IntersectionObserver` para revelar títulos, subtítulos, párrafos, imágenes y tarjetas individuales al entrar en el viewport, con fade-up suave de aproximadamente 680 ms y retrasos escalonados moderados.
+- Los elementos visibles al abrir una página se muestran inmediatamente. Los que aparecen más abajo se animan una sola vez y permanecen visibles al volver a desplazarse hacia arriba.
+- No se aplica opacidad ni transformación a secciones completas, fondos, encabezado, pie de página ni al contenedor `#app`. Se retiró la transición global de página.
+- Se respeta `prefers-reduced-motion`.
+- Se mantienen los SVG blancos locales de Facebook, Instagram, X, YouTube y LinkedIn en la franja superior y el pie de página.
+- El botón flotante de WhatsApp ahora utiliza `assets/whatsapp.svg`; se conservaron el enlace `https://wa.me/593986637750`, el tamaño/ubicación responsive y el comportamiento.
+- No se modificaron textos, estructura de secciones, paleta institucional ni distribución del contenido.
+- La captura visual de referencia de los iconos no apareció entre los archivos accesibles de esta edición; se conservó la presentación circular y alineada que ya tenía el encabezado. La comparación exacta de espaciado/tamaño queda como validación visual pendiente.

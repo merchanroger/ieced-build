@@ -72,6 +72,7 @@
     document.title = `${title} | IECED`;
     const cards = BLOG_POSTS.map(post=>`<article class="blog-card"><div class="blog-card-meta"><span>${esc(post.date)}</span><span>${esc(post.category)}</span></div><h2>${esc(lang==='en'?(post.titleEn||post.title):post.title)}</h2>${(lang==='en'?post.subtitleEn:post.subtitle)?`<p>${esc(lang==='en'?post.subtitleEn:post.subtitle)}</p>`:''}<a class="text-link" href="?page=blog-articulo&post=${encodeURIComponent(post.slug)}">${esc(t('readArticle'))} →</a></article>`).join('');
     app.innerHTML = `<section class="page-hero"><div class="wrap"><div class="breadcrumb"><a href="${href('home')}">${esc(t('crumbHome'))}</a><span>›</span>${esc(title)}</div><div class="eyebrow">IECED · ${esc(t('blog'))}</div><h1>${esc(title)}</h1><p>${esc(t('blogIntro'))}</p></div></section><section class="page-content"><div class="wrap"><div class="blog-grid">${cards}</div><p class="source-note">${lang==='en'?'This list reproduces post titles and dates visible in the available institutional archive. Full article texts were not included in the supplied capture.':'La lista reproduce los títulos y fechas visibles en el archivo institucional disponible. La captura facilitada no incluía los textos íntegros de los artículos.'}</p></div></section>`;
+    reveal();
   }
   function renderBlogArticle(slug) {
     const post = BLOG_POSTS.find(item=>item.slug===slug);
@@ -170,6 +171,7 @@
       const missingLabel = label(key);
       document.title = `${missingLabel} | IECED`;
       app.innerHTML = `<section class="page-hero"><div class="wrap"><div class="breadcrumb"><a href="${href('home')}">${esc(t('crumbHome'))}</a><span>›</span>${esc(missingLabel)}</div><div class="eyebrow">IECED</div><h1>${esc(missingLabel)}</h1></div></section><section class="page-content"><div class="wrap"><div class="notice"><strong>${esc(t('missingTitle'))}</strong><p>${esc(t('missing'))}</p></div></div></section>`;
+      reveal();
       return;
     }
     const en = pageEnglish[key];
@@ -184,35 +186,60 @@
     app.innerHTML = `<section class="page-hero"><div class="wrap"><div class="breadcrumb"><a href="${href('home')}">${esc(t('crumbHome'))}</a><span>›</span>${esc(label(key))}</div><div class="eyebrow">${esc(data.eyebrow || 'IECED')}</div><h1>${esc(title || label(key))}</h1>${intro ? `<p>${esc(intro)}</p>` : ''}</div></section><section class="page-content"><div class="wrap page-layout ${key==='contacto'?'contact-page-layout':''}"><article class="page-copy">${bodyHtml}${notice}${contact}<a class="btn" href="${href('contacto')}">${esc(t('contactCta'))}<span>↗</span></a></article>${key==='contacto'?'':brandPanel(data.eyebrow || 'IECED')}</div></section>`;
     reveal();
   }
+  let revealObserver = null;
   function reveal(){
-    const nodes=[...app.querySelectorAll('.section,.page-copy,.brand-panel,.service-card,.recognition-grid,.innovation-grid,.proof-grid')];
-    if(!('IntersectionObserver' in window)){nodes.forEach(n=>n.classList.add('is-visible'));return;}
-    const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');observer.unobserve(e.target);}}),{threshold:.08});
-    nodes.forEach(n=>observer.observe(n));
-  }
-  function navigate(url, push) {
+    if (revealObserver) revealObserver.disconnect();
+    const selector = [
+      'h1','h2','h3','p','img','.eyebrow','.service-card','.blog-card',
+      '.app-benefit-card','.app-feature-card','.contact-item','.notice',
+      '.content-paragraph','.contact-map-section','.staff-placeholder',
+      '.proof-seal','.brand-panel','.app-visual','.app-version-note',
+      '.app-store-actions','.contact-form-section'
+    ].join(',');
+    const candidates = [...app.querySelectorAll(selector)];
+    const selected = new Set(candidates);
+    const nodes = candidates.filter(node => {
+      let parent = node.parentElement;
+      while (parent && parent !== app) {
+        if (selected.has(parent)) return false;
+        parent = parent.parentElement;
+      }
+      return true;
+    });
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (push) history.pushState({}, '', url);
-    if (reduced) {
-      render();
-      window.scrollTo({top:0,behavior:'auto'});
+    if (reduced || !('IntersectionObserver' in window)) {
+      nodes.forEach(node => node.classList.add('is-revealed'));
       return;
     }
-    app.classList.remove('is-entering');
-    app.classList.add('is-leaving');
-    const loader = document.createElement('div');
-    loader.className = 'route-loader';
-    loader.setAttribute('role','status');
-    loader.setAttribute('aria-label',lang==='en'?'Loading section':'Cargando apartado');
-    loader.innerHTML = '<span class="route-spinner"></span><span>IECED</span>';
-    app.appendChild(loader);
-    window.setTimeout(() => {
-      render();
-      app.classList.remove('is-leaving');
-      app.classList.add('is-entering');
-      window.scrollTo({top:0,behavior:'smooth'});
-      requestAnimationFrame(() => requestAnimationFrame(() => app.classList.remove('is-entering')));
-    }, 125);
+    const siblingCounts = new Map();
+    nodes.forEach(node => {
+      const parent = node.parentElement;
+      const index = siblingCounts.get(parent) || 0;
+      siblingCounts.set(parent, index + 1);
+      node.classList.add('scroll-reveal');
+      node.style.setProperty('--reveal-delay', `${Math.min(index * 75, 300)}ms`);
+      const rect = node.getBoundingClientRect();
+      // El contenido que ya está en la primera pantalla se muestra sin espera.
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        node.classList.add('is-revealed');
+        node.classList.remove('scroll-reveal');
+        node.style.removeProperty('--reveal-delay');
+      }
+    });
+    revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {root:null, rootMargin:'0px 0px -6% 0px', threshold:0.08});
+    nodes.filter(node => node.classList.contains('scroll-reveal')).forEach(node => revealObserver.observe(node));
+  }
+  function navigate(url, push) {
+    if (push) history.pushState({}, '', url);
+    render();
+    window.scrollTo({top:0,behavior:'auto'});
   }
 
   function render(){
@@ -239,5 +266,4 @@
   document.addEventListener('keydown',event=>{if(event.key==='Escape'){document.querySelectorAll('.nav-group.expanded').forEach(g=>{g.classList.remove('expanded');g.querySelector('.nav-trigger')?.setAttribute('aria-expanded','false');});nav.classList.remove('open');document.querySelector('.menu-toggle').setAttribute('aria-expanded','false');}});
   window.addEventListener('popstate',()=>navigate(location.href,false));
   render();
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) { app.classList.add('is-entering'); requestAnimationFrame(()=>requestAnimationFrame(()=>app.classList.remove('is-entering'))); }
 })();
