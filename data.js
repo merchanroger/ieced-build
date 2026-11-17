@@ -174,40 +174,56 @@ window.IECED_DATA={
   "nosotros": {
     "eyebrow": "IECED",
     "title": "Donde la innovación se encuentra con el compromiso.",
-    "intro": "Creamos historias de éxito. Descubre el camino hacia una vida digestiva más saludable, con nuestro grupo de profesionales especializados en Gastroenterología y Endoscopía Digestiva.",
+    "intro": "Creamos historias de éxito. Descubre el camino hacia una vida digestiva más saludable, con nuestro grupo de profesionales especializados en Gastroenterología y Endoscopía Digestiva, con larga trayectoria nacional e internacional al servicio de tu salud.",
     "body": [
-      "Especializados en el diagnóstico, tratamiento y seguimiento de enfermedades digestivas y endoscópicas. Nuestros servicios abarcan desde la prevención hasta el tratamiento más avanzado aplicado con tecnología de vanguardia.",
-      "Contamos con un equipo interdisciplinar integral compuesto por profesionales altamente experimentados en distintas áreas de la Gastroenterología que ofrecen confort, precisión y seguridad para sus pacientes.",
-      "Nuestro equipo humano comprometido está integrado por médicos cualificados avalados por un alto rendimiento académico. Cuando acudas a IECED y sus sedes a nivel nacional podrás beneficiarte de los avances tecnológicos que nos destacan en diagnóstico y tratamientos gastroenterológicos endoscópicos."
+      "Especializados en el diagnóstico, tratamiento y seguimiento de enfermedades digestivas y endoscópicas. Nuestros servicios abarcan desde la prevención hasta el tratamiento más avanzado aplicado con tecnología de vanguardia. Contamos con un equipo interdisciplinar integral compuesto por profesionales altamente experimentados en distintas áreas de la Gastroenterología que ofrecen confort, precisión y seguridad para sus pacientes.",
+      "Nuestro equipo humano comprometido está integrado por médicos cualificados avalados por un alto rendimiento académico que se encargan de mantener actualizadas todas las herramientas clínicas que garantizan el bienestar de nuestros pacientes. Además del personal médico destaca nuestro equipo administrativo dedicado a ofrecer soluciones efectivas dentro del ámbito sanitario para satisfacer todas las necesidades del paciente.",
+      "Cuando acudas a IECED y sus sedes a nivel nacional podrás beneficiarte de todos los avances tecnológicos que nos destacan como referente mundial en cuanto al diagnóstico y tratamientos gastroenterológicos endoscópicos se refiere. Somos tu solución rápida, eficiente y segura si quieres recuperar tu salud intestinal a través del mayor nivel de calidad asistencial posible.",
+      "Compromiso inquebrantable con tu bienestar. En IECED, combinamos tecnología de vanguardia con la experiencia de nuestro equipo médico para ofrecer el mejor cuidado gastroenterológico del mundo. Tu bienestar es nuestra prioridad."
     ]
   },
   "por-que-ieced": {
     "eyebrow": "IECED",
     "title": "¿Por qué IECED?",
-    "intro": "En IECED, combinamos tecnología de vanguardia con la experiencia de nuestro equipo médico para ofrecer cuidado gastroenterológico.",
+    "intro": "Instituto Ecuatoriano de Enfermedades Digestivas (IECED) GASTROCLÍNICA S.A. Juntos lograremos erradicar tu malestar digestivo.",
     "body": [
-      "Especialistas con larga trayectoria nacional e internacional, galardonados por su constancia, perseverancia, innovación y aporte científico en la salud digestiva.",
-      "Somos pioneros en el Ecuador por el desarrollo y uso de inteligencia artificial en Colangioscopía y Ecoendoscopía.",
-      "Contamos con tecnología de punta y con gastroenterólogos de larga trayectoria internacional."
+      "El diagnóstico y tratamiento a tiempo son claves para prevenir enfermedades, esto aplica también para personas aparentemente en buen estado de salud, que suelen ser asintomáticas. En IECED tenemos beneficios para ti y tus seres queridos.",
+      "Centro equipado con la última y mejor tecnología y un excelente equipo de profesionales que, gracias a su perseverancia, cada día ayudan a aumentar la sobrevida de nuestros pacientes.",
+      "En la actualidad contamos con una prestigiosa reputación de servicio y personal altamente capacitado, quienes han logrado reconocimientos en importantes universidades y concursos alrededor del mundo (Canadá, Francia, Brasil, Argentina, etc.). IECED ha sido galardonado por entidades y organismos médicos, entre ellos la Organización Mundial de Gastroenterología, la DDW, UEG y la CIS, por sus trabajos médico-científicos.",
+      "Estamos orgullosos de ser miembros de la Organización Mundial de Endoscopia (WEO – World Endoscopy Organization), acreditación entregada gracias al profesionalismo, el enfoque en la investigación de vanguardia, la inversión en tecnología médica y la respuesta a las necesidades de nuestros pacientes.",
+      "Política de Calidad: estamos comprometidos con el mejoramiento continuo, mediante servicios médicos especializados, clínicos y endoscópicos, con tecnología de alto nivel; garantizando la satisfacción y seguridad de nuestros pacientes y cumpliendo los requisitos aplicables a los estándares de calidad.",
+      "Misión: brindar servicios médicos orientados al diagnóstico, estudio y tratamiento confiable en procedimientos endoscópicos, mediante un trato profesional y humano, enfocado en mejorar la salud y calidad de vida de nuestros pacientes.",
+      "Visión: consolidar nuestro liderazgo como centro médico especializado en endoscopía digestiva, caracterizado por el uso de tecnología de última generación y personal médico altamente capacitado, a través de nuevos centros médicos avalados por IECED en puntos estratégicos del país."
     ]
   },
   "consultas-medicas": {
     "eyebrow": "Servicios",
     "title": "Consultas médicas",
-    "intro": "Los mejores médicos en su especialidad te ayudarán con consultas médicas y la solución para tu malestar digestivo.",
+    "intro": "Los mejores médicos en su especialidad te ayudarán con consultas médicas y la solución definitiva para tu malestar digestivo.",
     "body": [
-      "Muchos de los malestares y síntomas que se pueden presentar e interrumpir tu estilo de vida tienen relación con el sistema digestivo. Por eso son importantes las consultas médicas, la prevención para la detección temprana y el control de cualquier enfermedad.",
-      "En el Instituto Ecuatoriano de Enfermedades Digestivas – IECED, tenemos la solución. Escríbenos y pregunta por nuestras consultas o teleconsultas.",
-      "También se ofrecen consultas en medicina general y consulta para manga endoscópica."
+      "Consultas con especialistas en gastroenterología: muchos de los malestares y síntomas que pueden interrumpir tu estilo de vida tienen relación con el sistema digestivo. Las consultas médicas son importantes para la prevención, la detección temprana y el control de cualquier enfermedad antes de que sea grave o irreversible.",
+      "En el Instituto Ecuatoriano de Enfermedades Digestivas – IECED, tenemos la solución definitiva. Escríbenos y pregunta por nuestras consultas o teleconsultas. Puedes agendar por WhatsApp o directamente por la App.",
+      "Consultas en medicina general: existen enfermedades silenciosas que pueden afectar tu salud. Lo mejor es visitar un médico desde los primeros síntomas, mientras son leves, para recibir un diagnóstico adecuado.",
+      "Consulta manga endoscópica: las personas con sobrepeso u obesidad tienen mayor probabilidad de desarrollar enfermedades y complicaciones. IECED ofrece atención médica especializada para ayudar a lograr el peso ideal y mejorar el estado de salud.",
+      "Plan Gastritis — $40: consulta médica con gastroenterólogo, ecografía y examen de laboratorio para Helicobacter pylori en heces.",
+      "Plan Estreñimiento — $50: consulta médica con gastroenterólogo, ecografía y exámenes de laboratorio para Helicobacter pylori en heces y sangre oculta en heces.",
+      "Plan cáncer de colon — $50: consulta médica con gastroenterólogo, ecografía y exámenes CEA y sangre oculta en heces.",
+      "Plan cáncer gástrico — $40: consulta médica con gastroenterólogo, ecografía y exámenes CEA y sangre oculta en heces.",
+      "Plan cáncer páncreas — $50: consulta médica con gastroenterólogo, ecografía y exámenes CA199, amilasa y lipasa.",
+      "Plan no más obesidad — $40: consulta médica con gastroenterólogo, ecografía y exámenes TGO, TGP, gamma GT, colesterol y triglicéridos.",
+      "Plan no más reflujo gástrico — $40: consulta médica con gastroenterólogo, ecografía y hemograma."
     ]
   },
   "obesidad": {
     "eyebrow": "Tratamientos",
     "title": "No más obesidad",
-    "intro": "Tratamientos efectivos para el control del sobrepeso.",
+    "intro": "Tratamientos especializados para la obesidad y el control del sobrepeso.",
     "body": [
-      "En IECED contamos con médicos altamente capacitados para ayudar a las personas con sobrepeso u obesidad a mejorar su estado de salud.",
-      "Para conocer el tratamiento adecuado, agenda una consulta con un médico especialista."
+      "Plan Islas Exóticas + Manga Gástrica Endoscópica: una propuesta para bajar de peso y descubrir las Islas Galápagos.",
+      "Manga Gástrica Endoscópica: procedimiento descrito por IECED como seguro, eficaz, mínimamente invasivo, con recuperación inmediata y resultados perdurables en el tiempo.",
+      "Balón Gástrico: procedimiento que consiste en ocupar un espacio en la cavidad gástrica, disminuyendo la capacidad del estómago, como ayuda para alcanzar objetivos de pérdida de peso.",
+      "IECED ofrece alternativas personalizadas para pacientes que buscan una opción frente a las dietas y ejercicios tradicionales. El equipo médico acompaña el proceso y la valoración de cada caso.",
+      "La página oficial también presenta testimonios de pacientes, información del staff especializado y un formulario de consulta para solicitar más información."
     ]
   },
   "procedimientos-endoscopicos": {
@@ -233,11 +249,12 @@ window.IECED_DATA={
     "title": "¡Disfruta de tu tiempo con tranquilidad!",
     "intro": "Asegura tu atención médica online o presencial a través de la APP IECED en cualquier dispositivo móvil.",
     "body": [
+      "Beneficios exclusivos desde la APP IECED: 30% en ecografías; 25% en consultas médicas; 20% en procedimientos; 15% en exámenes de laboratorio; y 10% de descuento para dependientes.",
       "Agenda con tu médico favorito.",
       "Agendamiento de citas médicas en menos de 5 minutos.",
       "Visualiza y descarga tus resultados.",
-      "Pago de citas médicas presencial y online.",
-      "Beneficios exclusivos desde la APP IECED: descuentos en ecografías, consultas médicas, procedimientos y exámenes de laboratorio."
+      "Pago de citas médicas, presencial y online.",
+      "La página oficial ofrece opciones para descargar la aplicación y consultar otras versiones."
     ]
   },
   "contacto": {
@@ -254,11 +271,12 @@ window.IECED_DATA={
   "centros": {
     "eyebrow": "Red IECED",
     "title": "Centros avalados de IECED",
-    "intro": "Centros especializados vinculados a la red IECED.",
+    "intro": "IECED es una empresa especializada en el diagnóstico, tratamiento y seguimiento de enfermedades digestivas y endoscópicas, con centros especializados asociados a su red nacional.",
     "body": [
-      "Instituto Ecuatoriano de Enfermedades Digestivas.",
-      "EndoscopyNet Centro especializado en Gastroenterología.",
-      "La web institucional presenta centros en Guayaquil, Quito, Santo Domingo y Manta."
+      "Nuestros servicios abarcan desde la prevención hasta el tratamiento más avanzado aplicado con tecnología de vanguardia. Contamos con un equipo interdisciplinar integral compuesto por profesionales altamente experimentados en distintas áreas de la Gastroenterología que ofrecen confort, precisión y seguridad para sus pacientes.",
+      "IECED es sinónimo de excelencia tanto en calidad quirúrgica como en el cuidado de los pacientes. Nuestro objetivo prioritario es siempre la salud plena e integral del paciente, incorporando innovaciones tecnológicas al diagnóstico y la práctica médica.",
+      "Nuestro equipo humano está integrado por médicos cualificados y personal administrativo dedicado a ofrecer soluciones efectivas dentro del ámbito sanitario.",
+      "Centros publicados en la red institucional: Instituto Ecuatoriano de Enfermedades Digestivas (Guayaquil); EndoscopyNet, centro especializado en Gastroenterología en Quito; EndoscopyNet en Santo Domingo; EndoscopyNet en Manta; EndoscopyNet en Milagro."
     ]
   },
   "staff": {
@@ -284,20 +302,30 @@ window.IECED_DATA={
   "premios-ieced": {
     "eyebrow": "Reconocimientos",
     "title": "Premios IECED",
-    "intro": "Premiados y reconocidos internacionalmente.",
+    "intro": "Premios, reconocimientos y menciones de honor a nivel mundial.",
     "body": [
-      "Por las investigaciones y avances médicos logrados de la mano de estándares de calidad y una gestión de mejora continua, IECED ha logrado reconocimiento internacional.",
-      "El sitio institucional destaca el reconocimiento como uno de los centros de ultrasonido endoscópico (EUS) a nivel mundial, con referencia a EURO-EUS 2023."
+      "FEAD 2023: Premio a la Mejor Comunicación Oral Páncreas y Vías Biliares de los Premios FEAD 2023.",
+      "ENDO 2022: tercer premio Meinhard Classen Abstract Award, por presentación oral en ENDO 2022, Kioto, Japón.",
+      "ESGE Innovation of the Year: premio al Director, Dr. Carlos Robles Medranda, a la Innovación ESGE del año 2021.",
+      "ASGE GI LEAP: mención de honor en proyectos tecnológicos avanzados para la experiencia de aprendizaje en línea.",
+      "UEG Week: póster de excelencia en la Semana Digestiva Europea, Barcelona, 2019.",
+      "International Pairing Program: WEO Outreach Center, 2019, con áreas de experiencia en EUS, POEM, ERCP, ESD, EMR, cromoendoscopia digital, endomicroscopia confocal y otros procedimientos.",
+      "UEG Week: póster de excelencia en Viena, 2018.",
+      "Semana Europea Unida de Gastroenterología: premio de trabajo libre oral en Viena, 2016.",
+      "SEED: Premio a la Mejor Investigación, Semana Ecuatoriana de Enfermedades Digestivas, Guayaquil, Ecuador, 2016."
     ]
   },
   "preparaciones": {
     "eyebrow": "Información al paciente",
     "title": "Preparaciones IECED",
-    "intro": "Descargar preparación de procedimientos.",
+    "intro": "Descargar preparación de procedimientos. Para precautelar la efectividad de los resultados, es recomendable leer cuidadosamente y seguir las recomendaciones para cada procedimiento endoscópico.",
     "body": [
-      "Para precautelar la efectividad en los resultados del procedimiento es recomendable leer cuidadosamente y seguir las recomendaciones en las que se detalla la preparación de cada procedimiento endoscópico.",
-      "Endoscopía y colonoscopía: Travadpik Oral, Izinova, Nulytely y Neolax.",
-      "Otros procedimientos con preparación publicada: CPRE, balón gástrico, pH-metría e impedanciometría de 24 horas, POEM, cianocrilato ECO COILS, cápsula endoscópica, ecoendoscopia diagnóstica con punción, ligadura de várices esofágicas, manometría, FibroScan, espirometría y broncoscopía."
+      "Endoscopia: documento de preparación disponible para descargar.",
+      "Endoscopía y Colonoscopía: Travadpik Oral hasta de las 12:00 am; Travadpik Oral después de las 12:00 am; Izinova hasta las 12:00 am; Izinova después de las 12:00 am.",
+      "Colonoscopia: Travadpik hasta las 12:00; Travadpik después de las 12:00; Nulytely; Neolax; Izinova hasta las 12:00; Izinova después de las 12:00.",
+      "Colangiopancreatografía Retrógrada Endoscópica (CPRE): documento de preparación disponible para descargar.",
+      "Balón Gástrico: preparación para colocación y retiro de balón gástrico.",
+      "PH-Metría e Impedanciometría de 24 horas; POEM (miotomía endoscópica per oral); Cyanocrilato ECO COILS; cápsula endoscópica; ecoendoscopia diagnóstica con punción; ligadura de várices esofágicas; manometría rectal y esofágica; Fibroscan elastografía ecografía; espirometría y broncoscopía: la página oficial publica documentos de preparación para estos procedimientos."
     ]
   },
   "preguntas-frecuentes": {
@@ -367,13 +395,16 @@ window.IECED_DATA={
   "procesos-calidad": {
     "eyebrow": "Calidad",
     "title": "Procesos de Calidad IECED",
-    "intro": "Procesos institucionales orientados a la seguridad del paciente y la mejora continua.",
+    "intro": "La calidad y la seguridad del paciente se trabajan mediante procesos institucionales de identificación, mantenimiento, mejora continua y bioseguridad.",
     "body": [
-      "Identificación correcta del paciente: se utilizan dos mecanismos de identificación, brazalete con nombre completo, cédula y procedimiento, y verificación del nombre en la cabecera de la camilla.",
-      "Mantenimiento preventivo de equipos biomédicos: se establece un cronograma anual coordinado con proveedores.",
-      "Gestión de calidad y mejora continua: se realizan mediciones mensuales de indicadores, satisfacción del cliente y oportunidades de mejora.",
-      "Medicamentos de alto riesgo y abreviaturas peligrosas: se verifican las abreviaturas aceptadas por el MSP y se identifican los medicamentos de alto riesgo.",
-      "Notificación de eventos adversos, bioseguridad, prevención de caídas y limpieza y desinfección del ambiente hospitalario y equipos médicos."
+      "Identificación correcta del paciente: las personas que se realizan procedimientos médicos ambulatorios se identifican mediante dos mecanismos: un brazalete con nombre completo, cédula y procedimiento, y la verificación del nombre en la cabecera de la camilla.",
+      "Mantenimiento preventivo de equipos biomédicos: al principio del año se realiza un cronograma de mantenimiento preventivo, coordinado directamente con los proveedores.",
+      "Gestión de calidad y mejora continua: todos los meses se miden los indicadores de cumplimiento, la satisfacción del cliente y la información necesaria para realizar mejoras.",
+      "Medicamentos de alto riesgo y abreviaturas peligrosas: se verifica mensualmente el uso correcto de abreviaturas aceptadas por el MSP. Los medicamentos de alto riesgo se identifican con etiqueta roja y descripción correspondiente; los medicamentos reenvasados llevan fecha de apertura, medicamento e iniciales del responsable.",
+      "Notificación de eventos adversos: la institución cuenta con protocolos para disminuir eventos relacionados con la seguridad de pacientes y personal interno, y con personal capacitado en reanimación cardiopulmonar.",
+      "Bioseguridad: protocolos de higiene de manos, uso correcto de equipos de protección personal, manejo seguro de cortopunzantes y desechos peligrosos.",
+      "Prevención de caídas: al ingreso, enfermería evalúa el riesgo de caída y aplica las precauciones del protocolo establecido.",
+      "Limpieza y desinfección: existen lineamientos, insumos apropiados, personal capacitado y tecnología para la limpieza y desinfección de áreas y equipos médicos."
     ]
   },
   "teleconsulta": {
