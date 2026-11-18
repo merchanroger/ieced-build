@@ -56,3 +56,6 @@ Pendientes que requieren captura o validación adicional:
 8. **Prueba visual:** el entorno no permitió completar una sesión de navegador headless. La validación visual final en escritorio y móvil debe hacerse después de publicar una vista previa.
 
 Los apartados que la web oficial envía a dominios externos conservan el enlace externo, no se duplican como páginas internas.
+
+### Ajustes de navegación y barra social (18 nov 2026)
+La navegación interna ahora realiza una transición breve de salida y entrada del contenido principal al cambiar de apartado. Los desplegables mantienen su animación propia y la animación respeta la preferencia `prefers-reduced-motion`. La barra superior usa fondo turquesa e iconos vectoriales blancos sin contenedores circulares, siguiendo la captura de referencia. En la barra superior se muestran Facebook, Instagram, YouTube y LinkedIn; X se conserva en el pie de página.

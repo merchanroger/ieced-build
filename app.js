@@ -257,10 +257,31 @@
     }, {root:null, rootMargin:'0px 0px -6% 0px', threshold:0.08});
     nodes.filter(node => node.classList.contains('scroll-reveal')).forEach(node => revealObserver.observe(node));
   }
+  let navigationBusy = false;
   function navigate(url, push) {
+    if (navigationBusy) return;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (push) history.pushState({}, '', url);
-    render();
-    window.scrollTo({top:0,behavior:'auto'});
+    if (reduced) {
+      render();
+      window.scrollTo({top:0,behavior:'auto'});
+      return;
+    }
+    navigationBusy = true;
+    app.classList.remove('page-enter');
+    app.classList.add('page-exit');
+    window.setTimeout(() => {
+      render();
+      window.scrollTo({top:0,behavior:'auto'});
+      app.classList.remove('page-exit');
+      // Fuerza un nuevo fotograma para que la entrada se reproduzca en cada ruta.
+      void app.offsetWidth;
+      app.classList.add('page-enter');
+      window.setTimeout(() => {
+        app.classList.remove('page-enter');
+        navigationBusy = false;
+      }, 620);
+    }, 190);
   }
 
   function render(){
@@ -278,7 +299,7 @@
     const trigger=event.target.closest('.nav-trigger');
     if(trigger){const group=trigger.closest('.nav-group');document.querySelectorAll('.nav-group').forEach(g=>{if(g!==group){g.classList.remove('expanded');g.querySelector('.nav-trigger').setAttribute('aria-expanded','false');}});const expanded=group.classList.toggle('expanded');trigger.setAttribute('aria-expanded',String(expanded));return;}
     const langButton=event.target.closest('[data-lang]');
-    if(langButton){lang=langButton.dataset.lang;try{localStorage.setItem('ieced-lang',lang);}catch(e){}render();return;}
+    if(langButton){lang=langButton.dataset.lang;try{localStorage.setItem('ieced-lang',lang);}catch(e){}navigate(location.href,false);return;}
     const anchor=event.target.closest('a[href^="?page="]');
     if(anchor){event.preventDefault();navigate(anchor.getAttribute('href'),true);return;}
   });

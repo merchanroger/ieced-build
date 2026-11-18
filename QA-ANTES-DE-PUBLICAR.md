@@ -24,3 +24,12 @@
 - [ ] Validar las animaciones originales y los estados interactivos de cada apartado.
 
 **No declarar fidelidad 100% hasta cerrar todos los puntos pendientes.**
+
+## Ajustes de navegación y redes sociales — 18 nov 2026
+- [x] Transición de salida/entrada al cambiar de página desde los menús y enlaces internos.
+- [x] Transición también al cambiar idioma y al navegar con atrás/adelante del navegador.
+- [x] Respeta `prefers-reduced-motion`.
+- [x] Barra social superior turquesa, iconos blancos SVG sin círculos, con espaciado y proporciones inspirados en la captura de referencia.
+- [x] Encabezado muestra Facebook, Instagram, YouTube y LinkedIn como en la referencia; X permanece disponible en el pie de página.
+- [x] Se mantienen los destinos oficiales existentes.
+- [ ] Prueba visual manual en navegador de escritorio y móvil pendiente.
