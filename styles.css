@@ -227,17 +227,19 @@ body{color:#444;font-family:'Montserrat',Arial,sans-serif}
 @keyframes iecedPageEnter{from{opacity:0;transform:translate3d(0,14px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
 @media(prefers-reduced-motion:reduce){#app.page-exit,#app.page-enter{animation:none!important;transition:none!important;opacity:1!important;transform:none!important}}
 
-/* Barra social superior basada en la referencia visual proporcionada */
-.topline{background:#009f9a!important;border:0!important;color:#fff!important}
-.topinner{min-height:80px!important;gap:18px}
+/* Iconos sociales: se replica la forma y distribución de la referencia,
+   conservando el color institucional original de IECED en la barra superior. */
+.topline{background:#ff6400!important;border-bottom:0!important;color:#fff!important}
 .top-location,.top-contact>a{color:#fff!important}
-.top-contact{gap:18px}
-.top-socials{height:80px;display:flex;align-items:center;justify-content:center;gap:27px;margin:0 0 0 8px;padding:0 24px;background:#009f9a}
-.top-socials a{width:34px!important;height:40px!important;display:flex;align-items:center;justify-content:center;border:0!important;border-radius:0!important;background:transparent!important;transition:opacity .2s,transform .2s!important}
+.topinner{min-height:42px!important;gap:18px}
+.top-contact{gap:20px}
+.top-socials{height:42px;display:flex;align-items:center;justify-content:center;gap:22px;margin:0 0 0 4px;padding:0;background:transparent}
+.top-socials a{width:30px!important;height:34px!important;display:flex;align-items:center;justify-content:center;border:0!important;border-radius:0!important;background:transparent!important;transition:opacity .2s,transform .2s!important}
 .top-socials a:hover{opacity:.78;transform:translateY(-2px)!important}
-.top-socials img{display:block;width:31px!important;height:31px!important;max-width:none;object-fit:contain;filter:brightness(0) invert(1)!important}
-.top-socials a[aria-label="Facebook IECED"] img{width:25px!important;height:31px!important}
-.top-socials a[aria-label="YouTube IECED"] img{width:35px!important;height:31px!important}
-.top-socials a[aria-label="LinkedIn IECED"] img{width:29px!important;height:33px!important}
-@media(max-width:980px){.topinner{min-height:70px!important}.top-socials{height:70px;gap:20px;padding:0 14px}.top-socials img{width:28px!important;height:28px!important}}
-@media(max-width:640px){.topinner{min-height:64px!important;gap:7px}.top-contact{gap:7px}.top-contact>a{font-size:9px}.top-socials{height:64px;gap:15px;margin:0;padding:0 8px}.top-socials a{width:27px!important;height:32px!important}.top-socials img{width:25px!important;height:25px!important}.top-socials a[aria-label="Facebook IECED"] img{width:20px!important;height:25px!important}.top-socials a[aria-label="YouTube IECED"] img{width:29px!important;height:25px!important}.top-socials a[aria-label="LinkedIn IECED"] img{width:23px!important;height:27px!important}}
+.top-socials img{display:block;width:28px!important;height:28px!important;max-width:none;object-fit:contain;filter:brightness(0) invert(1)!important}
+.top-socials a[aria-label="Facebook IECED"] img{width:21px!important;height:28px!important}
+.top-socials a[aria-label="Instagram IECED"] img{width:27px!important;height:27px!important}
+.top-socials a[aria-label="YouTube IECED"] img{width:34px!important;height:27px!important}
+.top-socials a[aria-label="LinkedIn IECED"] img{width:27px!important;height:29px!important}
+@media(max-width:980px){.topinner{min-height:42px!important}.top-socials{height:42px;gap:17px;padding:0 2px}.top-socials img{width:25px!important;height:25px!important}}
+@media(max-width:640px){.topinner{min-height:42px!important;gap:7px}.top-contact{gap:8px}.top-contact>a{font-size:9px}.top-socials{height:42px;gap:12px;margin:0;padding:0 2px}.top-socials a{width:25px!important;height:30px!important}.top-socials img{width:23px!important;height:23px!important}.top-socials a[aria-label="Facebook IECED"] img{width:18px!important;height:24px!important}.top-socials a[aria-label="YouTube IECED"] img{width:28px!important;height:23px!important}.top-socials a[aria-label="LinkedIn IECED"] img{width:22px!important;height:25px!important}}

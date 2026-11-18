@@ -33,3 +33,10 @@
 - [x] Encabezado muestra Facebook, Instagram, YouTube y LinkedIn como en la referencia; X permanece disponible en el pie de página.
 - [x] Se mantienen los destinos oficiales existentes.
 - [ ] Prueba visual manual en navegador de escritorio y móvil pendiente.
+
+
+## Corrección de color de barra superior — 18 nov 2026
+- [x] Restaurado el fondo institucional IECED naranja (#ff6400), sin cambiar la paleta de marca.
+- [x] Se conserva únicamente el estilo de los iconos de referencia: SVG blancos, sin círculos, proporciones diferenciadas y espaciado horizontal.
+- [x] Altura de barra restablecida a la escala compacta del encabezado anterior.
+- [ ] Revisión visual manual en navegador real pendiente.
