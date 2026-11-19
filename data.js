@@ -103,6 +103,46 @@ window.IECED_NAV=[
     "label": "Contacto",
     "key": "contacto",
     "href": "?page=contacto"
+  },
+  {
+    "label": "Endoscopía Digestiva",
+    "key": "service-endoscopia-digestiva",
+    "href": "?page=service-endoscopia-digestiva"
+  },
+  {
+    "label": "Consulta Médica",
+    "key": "service-consulta-medica",
+    "href": "?page=service-consulta-medica"
+  },
+  {
+    "label": "Colonoscopia",
+    "key": "service-colonoscopia",
+    "href": "?page=service-colonoscopia"
+  },
+  {
+    "label": "Ecoendoscopía diagnóstica",
+    "key": "service-ecoendoscopia",
+    "href": "?page=service-ecoendoscopia"
+  },
+  {
+    "label": "Balón Gástrico",
+    "key": "service-balon-gastrico",
+    "href": "?page=service-balon-gastrico"
+  },
+  {
+    "label": "Manometría",
+    "key": "service-manometria",
+    "href": "?page=service-manometria"
+  },
+  {
+    "label": "POEM (Miotomía Endoscópica Per Oral)",
+    "key": "service-poem",
+    "href": "?page=service-poem"
+  },
+  {
+    "label": "CPRE",
+    "key": "service-cpre",
+    "href": "?page=service-cpre"
   }
 ];
 window.IECED_DATA={
@@ -791,5 +831,87 @@ window.IECED_DATA={
       "Entre los invitados mencionados están la Dra. Gabriela Lara Cifuentes, la Dra. Giselle Jácome Naranjo y el Dr. Franklin Anchundia."
     ],
     "source_url": "https://ieced.com.ec/podcast-ieced/"
+  },
+  "service-endoscopia-digestiva": {
+    "eyebrow": "Servicios",
+    "title": "Endoscopía Digestiva",
+    "intro": "La tecnología que revoluciona la medicina digestiva.",
+    "body": [
+      "La endoscopia digestiva permite visualizar el tracto digestivo mediante un tubo o sonda flexible con cámara e iluminación. El canal de trabajo permite introducir pinzas y dispositivos para estudiar la mucosa, tomar muestras de tejidos anormales, tratar determinadas enfermedades, extirpar tumores, detener sangrados y extraer cuerpos extraños.",
+      "En IECED, los estudios se seleccionan de acuerdo con los síntomas y la localización de la patología. Para el esófago pueden indicarse endoscopia alta, pH-metría con impedanciometría y manometría esofágica. Para el intestino delgado se dispone de videocápsula endoscópica. Para el colon se utiliza colonoscopia.",
+      "Para estudiar el páncreas y estructuras vecinas, IECED describe la ecoendoscopía biliopancreática, que permite una evaluación detallada y puede complementarse con medios de contraste y toma de muestras cuando el caso lo requiere.",
+      "La página oficial enumera como objetivos la detección y tratamiento de úlceras, cáncer, pólipos desde 2 mm y el estudio de posibles orígenes de sangrado."
+    ],
+    "source_url": "https://ieced.com.ec/service/endoscopia-digestiva/"
+  },
+  "service-consulta-medica": {
+    "eyebrow": "Servicios",
+    "title": "Consulta Médica",
+    "intro": "¿Cuándo acudir al especialista en Gastroenterología y Endoscopía Digestiva Avanzada?",
+    "body": [
+      "IECED recomienda conocer el caso a profundidad para determinar el padecimiento y tratarlo eficazmente. Entre los motivos de consulta mencionados están náuseas, dolores abdominales constantes, diarrea, sensación de quemazón en el estómago e inflamaciones constantes.",
+      "También se recomienda acudir por estreñimiento, acidez estomacal frecuente o grave, hinchazón inusual, dolor abdominal repentino o intenso, sangrado rectal o sangre en las heces, y cuando se indica realizar un procedimiento endoscópico.",
+      "La página oficial describe el agendamiento médico desde la app o la web, con agenda con el médico favorito, visualización y descarga de resultados y pago de citas."
+    ],
+    "source_url": "https://ieced.com.ec/service/consulta-medica/"
+  },
+  "service-colonoscopia": {
+    "eyebrow": "Servicios",
+    "title": "Colonoscopia",
+    "intro": "Procedimiento endoscópico para la evaluación del intestino grueso.",
+    "body": [
+      "La colonoscopia forma parte de los procedimientos que IECED ofrece para la evaluación del intestino grueso. La información institucional la presenta dentro de sus procedimientos endoscópicos y de sus opciones de preparación.",
+      "La preparación correspondiente debe seleccionarse según las indicaciones del equipo médico y el horario asignado. IECED publica documentos específicos de preparación en su sección de Preparaciones."
+    ],
+    "source_url": "https://ieced.com.ec/procedimientos-endoscopicos/"
+  },
+  "service-ecoendoscopia": {
+    "eyebrow": "Servicios",
+    "title": "Ecoendoscopía diagnóstica",
+    "intro": "Evaluación que combina endoscopia y ecografía para estudiar estructuras del aparato digestivo.",
+    "body": [
+      "La ecoendoscopia combina la visualización endoscópica con ecografía en tiempo real para estudiar estructuras desde el esófago hasta el intestino delgado y el área ano-rectal.",
+      "La información de preguntas frecuentes de IECED menciona su uso para estudiar adenopatías, cáncer del sistema digestivo, cálculos, quistes, pancreatitis y para evaluar pacientes cirróticos. En determinados casos puede permitir punción o biopsia."
+    ],
+    "source_url": "https://ieced.com.ec/preguntas-frecuentes/"
+  },
+  "service-balon-gastrico": {
+    "eyebrow": "Tratamientos",
+    "title": "Balón Gástrico",
+    "intro": "Tratamiento endoscópico para el control del peso.",
+    "body": [
+      "IECED incluye el balón gástrico entre sus procedimientos endoscópicos y en su oferta de tratamientos para la obesidad. La institución publica información diferenciada para la colocación y el retiro del balón, además de documentos de preparación.",
+      "La indicación, las condiciones del procedimiento y el seguimiento deben ser valorados por el equipo médico."
+    ],
+    "source_url": "https://ieced.com.ec/procedimientos-endoscopicos/"
+  },
+  "service-manometria": {
+    "eyebrow": "Servicios",
+    "title": "Manometría",
+    "intro": "Estudio funcional para evaluar la motilidad del aparato digestivo.",
+    "body": [
+      "IECED incluye manometría esofágica y manometría rectal dentro de sus preparaciones y servicios. En sus preguntas frecuentes explica que la manometría esofágica ayuda al diagnóstico de enfermedades que alteran la motilidad del esófago, mediante la evaluación de presiones y relajación."
+    ],
+    "source_url": "https://ieced.com.ec/preparaciones/"
+  },
+  "service-poem": {
+    "eyebrow": "Servicios",
+    "title": "POEM (Miotomía Endoscópica Per Oral)",
+    "intro": "Tratamiento endoscópico para determinados trastornos de motilidad.",
+    "body": [
+      "IECED incluye POEM entre sus procedimientos endoscópicos. La información institucional lo describe como un tratamiento que consiste en una incisión en la capa muscular para permitir la relajación de una estructura. La web menciona su uso en casos como acalasia y gastroparesia.",
+      "La duración y la indicación dependen de los hallazgos y de la valoración del equipo médico."
+    ],
+    "source_url": "https://ieced.com.ec/preguntas-frecuentes/"
+  },
+  "service-cpre": {
+    "eyebrow": "Servicios",
+    "title": "Colangiopancreatografía Retrógrada Endoscópica (CPRE)",
+    "intro": "Procedimiento endoscópico relacionado con el estudio y tratamiento de las vías biliares y pancreáticas.",
+    "body": [
+      "La CPRE figura entre los procedimientos endoscópicos de IECED y cuenta con una preparación específica publicada en la sección de Preparaciones.",
+      "Las indicaciones, riesgos y preparación deben confirmarse con el equipo médico que realizará el procedimiento."
+    ],
+    "source_url": "https://ieced.com.ec/preparaciones/"
   }
 };

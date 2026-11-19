@@ -40,3 +40,11 @@
 - [x] Se conserva únicamente el estilo de los iconos de referencia: SVG blancos, sin círculos, proporciones diferenciadas y espaciado horizontal.
 - [x] Altura de barra restablecida a la escala compacta del encabezado anterior.
 - [ ] Revisión visual manual en navegador real pendiente.
+
+
+## Ampliación de servicios — 19 nov 2026
+- [x] Se añadieron rutas para Endoscopía Digestiva, Consulta Médica, Colonoscopia, Ecoendoscopía, Balón Gástrico, Manometría, POEM y CPRE.
+- [x] Las nuevas rutas están vinculadas desde el grupo Atención del menú Servicios.
+- [x] Se añadieron etiquetas de navegación en inglés para las nuevas rutas.
+- [x] Se conservó la paleta institucional en la barra superior; solo cambia la apariencia de los logotipos.
+- [ ] La igualdad visual del 100% sigue pendiente de cotejo página por página y de validar las funciones dinámicas de WooCommerce y el blog.

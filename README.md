@@ -57,5 +57,9 @@ Pendientes que requieren captura o validación adicional:
 
 Los apartados que la web oficial envía a dominios externos conservan el enlace externo, no se duplican como páginas internas.
 
-### Ajustes de navegación y barra social (18 nov 2026)
-La navegación interna ahora realiza una transición breve de salida y entrada del contenido principal al cambiar de apartado. Los desplegables mantienen su animación propia y la animación respeta la preferencia `prefers-reduced-motion`. La barra superior usa fondo turquesa e iconos vectoriales blancos sin contenedores circulares, siguiendo la captura de referencia. En la barra superior se muestran Facebook, Instagram, YouTube y LinkedIn; X se conserva en el pie de página.
+
+
+### Ampliación de páginas de servicios — 19 nov 2026
+Se incorporaron rutas internas específicas para Endoscopía Digestiva, Consulta Médica, Colonoscopia, Ecoendoscopía diagnóstica, Balón Gástrico, Manometría, POEM y CPRE. El contenido añadido se basa en las páginas públicas oficiales consultadas y se enlaza desde el apartado Atención del menú Servicios. La barra superior conserva los colores institucionales IECED; únicamente los logotipos sociales se presentan en SVG blancos, sin círculos.
+
+Esta reconstrucción no puede certificarse como idéntica al 100%: el sitio oficial incluye funciones dinámicas de tienda y checkout, archivos completos del blog, páginas que no fueron accesibles y efectos que requieren comparación visual en navegador. El README y la lista de control identifican estos límites para evitar presentar como terminado algo que aún necesita cotejo.
