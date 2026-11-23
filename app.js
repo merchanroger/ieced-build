@@ -258,6 +258,7 @@
     nodes.filter(node => node.classList.contains('scroll-reveal')).forEach(node => revealObserver.observe(node));
   }
   let navigationBusy = false;
+  const routeLoader = document.getElementById('routeLoader');
   function navigate(url, push) {
     if (navigationBusy) return;
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -270,18 +271,24 @@
     navigationBusy = true;
     app.classList.remove('page-enter');
     app.classList.add('page-exit');
+    routeLoader?.classList.add('is-active');
+    routeLoader?.setAttribute('aria-hidden','false');
+    // El indicador aparece durante el cambio de ruta, como una pantalla breve de carga.
     window.setTimeout(() => {
       render();
       window.scrollTo({top:0,behavior:'auto'});
       app.classList.remove('page-exit');
-      // Fuerza un nuevo fotograma para que la entrada se reproduzca en cada ruta.
       void app.offsetWidth;
       app.classList.add('page-enter');
       window.setTimeout(() => {
-        app.classList.remove('page-enter');
-        navigationBusy = false;
+        routeLoader?.classList.remove('is-active');
+        routeLoader?.setAttribute('aria-hidden','true');
+        window.setTimeout(() => {
+          app.classList.remove('page-enter');
+          navigationBusy = false;
+        }, 560);
       }, 620);
-    }, 190);
+    }, 360);
   }
 
   function render(){
