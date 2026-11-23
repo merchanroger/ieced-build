@@ -273,3 +273,26 @@ body{color:#444;font-family:'Montserrat',Arial,sans-serif}
 .top-socials a[aria-label="YouTube IECED"] img{width:16px!important;height:13px!important}
 .top-socials a[aria-label="LinkedIn IECED"] img{width:14px!important;height:14px!important}
 @media(max-width:640px){.topinner{min-height:37px!important}.top-socials{height:32px!important;gap:5px!important}.top-socials a{width:23px!important;height:23px!important}.top-socials img{width:12px!important;height:12px!important}.top-contact{gap:7px!important}.top-contact>a{font-size:9px!important}}
+
+
+/* Ajustes solicitados: loader de cinco puntos y redes con glifos limpios */
+.route-loader{background:rgba(255,255,255,.96)!important;display:grid;place-items:center;transition:opacity .16s ease,visibility .16s ease!important}
+.route-loader-card,.route-loader-mark,.route-loader-spinner{display:none!important}
+.route-loader-dots{display:flex;align-items:center;justify-content:center;gap:11px;padding:20px}
+.route-loader-dots span{display:block;width:12px;height:12px;border-radius:50%;background:#ff6400;opacity:.35;transform:scale(.78);animation:iecedDotPulse .9s ease-in-out infinite}
+.route-loader-dots span:nth-child(2){animation-delay:.12s}
+.route-loader-dots span:nth-child(3){animation-delay:.24s}
+.route-loader-dots span:nth-child(4){animation-delay:.36s}
+.route-loader-dots span:nth-child(5){animation-delay:.48s}
+@keyframes iecedDotPulse{0%,80%,100%{opacity:.35;transform:scale(.78)}40%{opacity:1;transform:scale(1.18)}}
+.topline{background:#f4f7f7!important;border-bottom:1px solid #e9eeee!important;color:#56636a!important}
+.top-socials{display:flex!important;align-items:center!important;justify-content:center!important;gap:23px!important;margin:0 0 0 5px!important;padding:0!important;height:42px!important;background:transparent!important}
+.top-socials a{display:flex!important;align-items:center!important;justify-content:center!important;width:31px!important;height:36px!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;transition:opacity .18s ease,transform .18s ease!important}
+.top-socials a:hover{background:transparent!important;border:0!important;box-shadow:none!important;opacity:.72!important;transform:translateY(-1px)!important}
+.top-socials img{display:block!important;object-fit:contain!important;filter:brightness(0) saturate(100%) invert(42%) sepia(94%) saturate(1290%) hue-rotate(137deg) brightness(91%) contrast(101%)!important}
+.top-socials a[aria-label="Facebook IECED"] img{width:17px!important;height:31px!important}
+.top-socials a[aria-label="Instagram IECED"] img{width:29px!important;height:29px!important}
+.top-socials a[aria-label="YouTube IECED"] img{width:34px!important;height:25px!important}
+.top-socials a[aria-label="LinkedIn IECED"] img{width:29px!important;height:31px!important}
+@media(max-width:640px){.top-socials{gap:11px!important;height:36px!important}.top-socials a{width:26px!important;height:30px!important}.top-socials a[aria-label="Facebook IECED"] img{width:14px!important;height:26px!important}.top-socials a[aria-label="Instagram IECED"] img{width:24px!important;height:24px!important}.top-socials a[aria-label="YouTube IECED"] img{width:28px!important;height:21px!important}.top-socials a[aria-label="LinkedIn IECED"] img{width:24px!important;height:26px!important}}
+@media(prefers-reduced-motion:reduce){.route-loader-dots span{animation:none!important;opacity:1!important;transform:none!important}}
