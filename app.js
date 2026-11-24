@@ -214,7 +214,8 @@
       'h1','h2','h3','p','img','.eyebrow','.service-card','.blog-card',
       '.app-benefit-card','.app-feature-card','.contact-item','.notice',
       '.content-paragraph','.contact-map-section','.staff-placeholder',
-      '.proof-seal','.brand-panel','.app-visual','.app-version-note',
+      '.proof-seal','.brand-panel','.app-visual','.app-placeholder','.innovation-mark',
+      '.staff-placeholder-grid','.app-version-note',
       '.app-store-actions','.contact-form-section'
     ].join(',');
     const candidates = [...app.querySelectorAll(selector)];

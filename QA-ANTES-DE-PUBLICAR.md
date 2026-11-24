@@ -48,3 +48,12 @@
 - [x] Se añadieron etiquetas de navegación en inglés para las nuevas rutas.
 - [x] Se conservó la paleta institucional en la barra superior; solo cambia la apariencia de los logotipos.
 - [ ] La igualdad visual del 100% sigue pendiente de cotejo página por página y de validar las funciones dinámicas de WooCommerce y el blog.
+
+
+## Ajustes visuales — 24 noviembre 2026
+- Iconos sociales superiores: Facebook, Instagram, YouTube, LinkedIn y X en SVG vectorial, color institucional naranja IECED (#FF6400), sin filtros CSS.
+- Barra superior conservada en gris claro; no se modificó su fondo.
+- Favicon simplificado al isotipo IECED (sin el texto “IECED”), conservando los tonos naranja y azul institucionales del símbolo.
+- Tipografía del menú principal ampliada y adaptada a escritorio, tablet y móvil.
+- Animación de aparición al desplazarse añadida a los paneles gráficos y espacios reservados para fotografías de la página de inicio.
+- Verificación técnica: `node --check app.js` y validación XML de los SVG. La revisión visual en navegador debe realizarse después de publicar.
