@@ -354,3 +354,43 @@ body{color:#444;font-family:'Montserrat',Arial,sans-serif}
 #app .scroll-reveal{opacity:0;transform:translate3d(0,24px,0) scale(.985);transition:opacity .72s cubic-bezier(.22,.61,.36,1),transform .72s cubic-bezier(.22,.61,.36,1);transition-delay:var(--reveal-delay,0ms);will-change:opacity,transform}
 #app .scroll-reveal.is-revealed,#app .is-revealed{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){#app .scroll-reveal{opacity:1!important;transform:none!important;transition:none!important;will-change:auto}}
+
+
+/* Fotografías oficiales IECED: encuadre adaptable y carga progresiva */
+.content-image{margin:0;overflow:hidden}
+.content-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-photo{min-height:clamp(280px,38vw,490px);border-radius:4px 42px 4px 42px;position:relative;box-shadow:0 24px 65px rgba(20,42,53,.14)}
+.hero-photo img{position:absolute;inset:0}
+.service-card.has-photo{display:flex;flex-direction:column;padding:0;overflow:hidden;min-width:0}
+.service-photo{width:100%;aspect-ratio:570/447;background:#f3f5f5;overflow:hidden}
+.service-photo img{transition:transform .75s cubic-bezier(.2,.7,.2,1),filter .5s ease}
+.service-card.has-photo:hover .service-photo img{transform:scale(1.055);filter:saturate(1.06)}
+.service-card-copy{padding:22px 24px 26px;position:relative;flex:1}
+.staff-placeholder.has-photo{padding:0;overflow:hidden;display:flex;flex-direction:column;text-decoration:none}
+.staff-photo{width:100%;aspect-ratio:551/480;background:#f2f4f4}
+.staff-photo img{object-position:center 22%;transition:transform .8s ease}
+.staff-placeholder.has-photo:hover img{transform:scale(1.045)}
+.staff-placeholder.has-photo small{display:block;padding:16px 18px 20px;font-size:15px;line-height:1.45}
+.app-visual-photo{position:relative;display:grid;place-items:center;min-height:380px}
+.app-screen-image{position:relative;z-index:2;width:min(76%,320px);height:auto;aspect-ratio:1;object-fit:contain;border-radius:24px;box-shadow:0 25px 70px rgba(20,42,53,.16)}
+.centre-photo-grid .service-photo{aspect-ratio:570/406}
+.page-content img,.content-paragraph img{max-width:100%;height:auto}
+@media(max-width:760px){
+ .hero-photo{min-height:250px;border-radius:3px 26px 3px 26px}
+ .service-photo{aspect-ratio:16/10}
+ .service-card-copy{padding:18px}
+ .staff-placeholder-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .staff-photo{aspect-ratio:4/5}
+ .app-visual-photo{min-height:300px}
+ .app-screen-image{width:min(70%,260px)}
+}
+@media(max-width:420px){
+ .staff-placeholder-grid{grid-template-columns:1fr 1fr;gap:12px}
+ .staff-placeholder.has-photo small{font-size:13px;padding:12px}
+}
+/* Animación discreta de entrada al desplazarse */
+.reveal-ready .reveal-item{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal-ready .reveal-item.is-visible{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){
+ .service-photo img,.staff-photo img,.reveal-ready .reveal-item{transition:none;transform:none}
+}

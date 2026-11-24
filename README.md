@@ -63,3 +63,6 @@ Los apartados que la web oficial envía a dominios externos conservan el enlace 
 Se incorporaron rutas internas específicas para Endoscopía Digestiva, Consulta Médica, Colonoscopia, Ecoendoscopía diagnóstica, Balón Gástrico, Manometría, POEM y CPRE. El contenido añadido se basa en las páginas públicas oficiales consultadas y se enlaza desde el apartado Atención del menú Servicios. La barra superior conserva los colores institucionales IECED; únicamente los logotipos sociales se presentan en SVG blancos, sin círculos.
 
 Esta reconstrucción no puede certificarse como idéntica al 100%: el sitio oficial incluye funciones dinámicas de tienda y checkout, archivos completos del blog, páginas que no fueron accesibles y efectos que requieren comparación visual en navegador. El README y la lista de control identifican estos límites para evitar presentar como terminado algo que aún necesita cotejo.
+
+
+Recursos oficiales integrados: fotografías en `assets/images/`. Las animaciones de entrada y hover están implementadas en CSS; el ZIP de imágenes recibido no incluía GIF, video ni Lottie.
