@@ -66,3 +66,21 @@
 - Se añadieron transiciones de escala al pasar sobre las fotografías y entrada progresiva al desplazarse.
 - El ZIP de recursos no contiene GIF, videos ni archivos Lottie. Incluye dos SVG de indicadores circulares; por tanto, las animaciones visuales aplicadas son CSS y no reproducciones de animaciones originales.
 - Pendiente: cotejo visual de cada ruta y sección interna en navegador frente a la web oficial; este entorno no certifica una comparación píxel a píxel.
+
+## Revisión integral con el segundo paquete de recursos — 25 noviembre 2026
+- [x] Se revisó el segundo ZIP: contiene fotografías JPEG/PNG, logotipo SVG, iconos/indicadores SVG y recursos gráficos auxiliares; no contiene GIF, MP4, WebM ni Lottie.
+- [x] Se incorporaron al proyecto los recursos rasterizados del paquete oficial, conservando los archivos originales y sus dimensiones (sin ampliación artificial que invente detalle).
+- [x] Se mapearon fotografías específicas para procedimientos, médicos, centros avalados, inteligencia artificial, reconocimientos y aplicación móvil.
+- [x] Se añadieron imágenes a las fichas internas de staff, centros y procedimientos cuando la información de la página permite asociarlas.
+- [x] Se centraron los encuadres y se definieron relaciones de aspecto adaptables; las imágenes se ajustan con `object-fit` según su tipo.
+- [x] Se añadieron animaciones CSS suaves: aparición progresiva al entrar en pantalla, desplazamiento corto, zoom de imagen y transiciones discretas de tarjetas.
+- [x] Las animaciones respetan `prefers-reduced-motion`.
+- [x] El menú Nosotros/Servicios utiliza control de clic directo sobre los botones desplegables, sin convertirlos en enlaces de navegación; en móvil el panel se abre como acordeón y en escritorio admite hover/teclado.
+- [x] Redes sociales superiores: cinco iconos SVG oficiales/reconocibles, blancos sobre la franja naranja, sin círculos ni botones prominentes; se ajustan en móvil.
+- [x] Se eliminó la repetición del icono X en el pie de página.
+- [x] Se mantienen el favicon con isotipo y el logotipo IECED.
+- [x] `node --check app.js` y `node --check data.js` pasan; llaves CSS balanceadas; todas las rutas locales de imágenes usadas existen.
+- [ ] Prueba visual manual en navegador real de escritorio/tablet/móvil pendiente. El intento de captura automatizada en este entorno no terminó; no se certifica la apariencia final ni la fidelidad píxel a píxel.
+- [ ] Comparar todas las rutas internas una por una con la web oficial; no todos los contenidos dinámicos del sitio original forman parte de la captura de recursos.
+
+**Nota de calidad:** las fotografías no se han escalado artificialmente. Cuando el archivo fuente tiene dimensiones pequeñas, se utiliza en espacios de tamaño contenido o se prioriza una fotografía de mayor resolución disponible. Las animaciones de esta entrega son CSS porque el ZIP no contiene archivos de animación reproducibles.

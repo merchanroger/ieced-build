@@ -66,3 +66,15 @@ Esta reconstrucción no puede certificarse como idéntica al 100%: el sitio ofic
 
 
 Recursos oficiales integrados: fotografías en `assets/images/`. Las animaciones de entrada y hover están implementadas en CSS; el ZIP de imágenes recibido no incluía GIF, video ni Lottie.
+
+## Revisión de recursos y responsive — 25 noviembre 2026
+
+Esta versión incorpora los recursos visuales del segundo paquete de imágenes entregado por el usuario. Se mantienen los archivos originales y se organizan bajo `assets/images/`.
+
+- Las imágenes de portada, procedimientos, equipo médico, centros y APP se asignan a las secciones según su contenido y nombre de archivo.
+- Las fotografías se muestran centradas y con relaciones de aspecto adaptables; no se amplían artificialmente.
+- Las animaciones de entrada, desplazamiento y zoom son CSS y respetan la preferencia de movimiento reducido del dispositivo.
+- Los menús **Nosotros** y **Servicios** abren sus opciones al pulsar el botón; en móvil se comportan como acordeones y en escritorio admiten hover y teclado.
+- Los cinco iconos sociales del encabezado son SVG blancos, sobre la franja naranja institucional, con un diseño discreto que se adapta a pantallas pequeñas.
+
+Antes de publicar, revisa manualmente las rutas en escritorio, tablet y móvil. Consulta `QA-ANTES-DE-PUBLICAR.md` para las verificaciones y limitaciones pendientes.
