@@ -654,3 +654,14 @@ body{color:#444;font-family:'Montserrat',Arial,sans-serif}
 @media(prefers-reduced-motion:reduce){
   #app figure.content-image,#app figure.content-image img { transition:none !important; }
 }
+
+
+/* Se retira la imagen promocional de la APP IECED: el contenido textual ocupa el espacio disponible. */
+#app .benefits-grid-no-image{grid-template-columns:minmax(0,1fr)!important;max-width:100%;}
+#app .benefits-grid-no-image>div:first-child{width:100%;max-width:900px;}
+#app .app-hero-grid-no-visual{grid-template-columns:minmax(0,1fr)!important;max-width:100%;}
+#app .app-hero-grid-no-visual .app-hero-copy{width:100%;max-width:900px;}
+@media(max-width:760px){
+  #app .benefits-grid-no-image,#app .app-hero-grid-no-visual{grid-template-columns:minmax(0,1fr)!important;}
+  #app .benefits-grid-no-image>div:first-child,#app .app-hero-grid-no-visual .app-hero-copy{max-width:100%;}
+}
