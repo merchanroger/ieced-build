@@ -572,3 +572,85 @@ body{color:#444;font-family:'Montserrat',Arial,sans-serif}
  #app .content-image,#app .content-image img,#app .service-card,#app .team-card,#app .center-card,#app .procedure-card{opacity:1!important;transform:none!important;transition:none!important;will-change:auto!important}
  .nav-group.expanded>.nav-dropdown{animation:none!important}
 }
+
+/* AJUSTE GLOBAL: los contenedores se adaptan a la proporción original de cada imagen.
+   No recortar, estirar ni forzar alturas fijas. */
+#app figure.content-image,
+#app figure.hero-photo,
+#app figure.service-photo,
+#app figure.staff-photo,
+#app figure.innovation-photo,
+#app figure.proof-award-photo,
+#app figure.staff-team-image,
+#app figure.team-photo,
+#app figure.center-photo,
+#app figure.procedure-photo,
+#app figure.page-feature-photo,
+#app figure.home-app-photo {
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  aspect-ratio:auto !important;
+  overflow:visible !important;
+  position:relative !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  background:transparent !important;
+}
+#app figure.content-image img,
+#app figure.hero-photo img,
+#app figure.service-photo img,
+#app figure.staff-photo img,
+#app figure.innovation-photo img,
+#app figure.proof-award-photo img,
+#app figure.staff-team-image img,
+#app figure.team-photo img,
+#app figure.center-photo img,
+#app figure.procedure-photo img,
+#app figure.page-feature-photo img,
+#app figure.home-app-photo img {
+  display:block !important;
+  position:static !important;
+  inset:auto !important;
+  width:100% !important;
+  max-width:100% !important;
+  height:auto !important;
+  max-height:none !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  transform:none !important;
+  border-radius:inherit;
+}
+#app figure.hero-photo { min-height:0 !important; box-shadow:none !important; }
+#app figure.staff-photo,
+#app figure.team-photo,
+#app figure.center-photo,
+#app figure.procedure-photo { margin-bottom:14px !important; }
+#app figure.staff-team-image { max-width:100% !important; }
+#app figure.innovation-photo,
+#app figure.proof-award-photo,
+#app figure.page-feature-photo { max-width:100% !important; }
+#app figure.home-app-photo { max-width:300px !important; }
+#app .app-visual-photo { min-height:0 !important; }
+#app .app-screen-image { width:min(100%,320px) !important; height:auto !important; aspect-ratio:auto !important; object-fit:contain !important; }
+#app .content-image.is-revealed img { transform:none !important; }
+@media(max-width:760px){
+  #app figure.content-image,
+  #app figure.hero-photo,
+  #app figure.service-photo,
+  #app figure.staff-photo,
+  #app figure.innovation-photo,
+  #app figure.proof-award-photo,
+  #app figure.staff-team-image,
+  #app figure.team-photo,
+  #app figure.center-photo,
+  #app figure.procedure-photo,
+  #app figure.page-feature-photo,
+  #app figure.home-app-photo { width:100% !important; height:auto !important; aspect-ratio:auto !important; }
+  #app figure.home-app-photo { max-width:260px !important; }
+}
+@media(prefers-reduced-motion:reduce){
+  #app figure.content-image,#app figure.content-image img { transition:none !important; }
+}
